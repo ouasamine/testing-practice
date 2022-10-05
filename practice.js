@@ -8,4 +8,8 @@ const reverseString = (string) => {
   return string.split('').reverse().toString().replace(/,/g, '')
 }
 
-module.exports = {stringLength, reverseString};
+const capitalize = (string) => {
+  return string.replace(string.charAt(0), string.charAt(0).toUpperCase())
+}
+
+module.exports = {stringLength, reverseString, capitalize};
